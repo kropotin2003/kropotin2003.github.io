@@ -1,6 +1,87 @@
 body {
-    background-color: cyan;
+    background-image: url("26.jpg");
+    background-position: center;
+    margin: 0;
+    box-sizing: border-box;
 }
-h1 {
-    color: rebeccapurple;
+.all {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 150px 300px 300px 200px; 
+    grid-template-areas: 
+    "heder heder heder heder"
+    "tex tex tex tex"
+    "tex tex tex tex"
+    "foter foter foter foter";
+}
+.heder {
+    grid-area: heder;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    margin: 0.3% 1%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "h1 h1 . . . .";
+}
+.heder1 {
+    grid-area: h1;
+    align-items: center;
+    padding:35px 20px;
+    font-size: 25px;
+}
+.tex {
+   grid-area: tex;
+   border-radius: 20px;
+   background-color: darkorange;
+   margin: 0% 5%;
+   display: grid;
+   grid-template-columns: 50% 50%;
+   grid-template-rows: 1fr 1fr;
+   grid-template-areas: 
+   "cont img"
+   "cont img";
+}
+.cont {
+    grid-area: cont;
+}
+.img {
+    grid-area: img;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+    "img1"
+    "."
+    "." ;
+}
+.img1 {
+    grid-area: img1;
+    width: 100%;
+    border-radius: 20%;
+}
+.foter {
+    grid-area: foter;
+    background-color: darkorchid;
+    margin: 0.5% 0.5% 0.3%;
+    border-radius: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:800px) {
+    .heder1 {
+        font-size: 17px;
+        padding: 50px 20px;
+    }
 }

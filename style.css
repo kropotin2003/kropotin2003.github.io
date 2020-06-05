@@ -31,6 +31,7 @@ body {
     align-items: center;
     padding:35px 20px;
     font-size: 25px;
+    color:pink;
 }
 .tex {
    grid-area: tex;
